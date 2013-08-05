@@ -1,0 +1,193 @@
+/* первый слайдер */
+#h_slider {
+	position: relative;
+	width: 1060px;
+	margin: 0 auto;
+}
+
+#slider {
+	width: 1060px;
+	height: 560px;
+	overflow: hidden;
+}
+
+#slider ul {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	list-style-type: none;
+	z-index: 1;
+}
+
+#h_slider .next,#h_slider .prev {
+	width: 26px;
+	height: 26px;
+	background: url(i/btn-sprite.png) 0 0 no-repeat;
+	display: inline-block;
+	z-index: 100;
+	vertical-align: middle;
+	margin: 0 3px;
+}
+
+#h_slider .next {
+	background-position: 0 -46px;
+}
+
+#h_slider .prev {
+	background-position: 0 -20px;
+}
+
+.next:hover,.next:focus,.prev:hover,.prev:focus {
+	text-decoration: none;
+	border: none;
+}
+
+#h_slider .next:hover,#h_slider .next:focus,#h_slider .prev:hover,#h_slider .prev:focus {
+	opacity: .7;
+}
+
+#h_slider .next:active {
+	background-position: -26px -46px;
+}
+
+#h_slider .prev:active {
+	background-position: -26px -20px;
+}
+
+.next>span,.prev>span {
+	display: none;
+}
+
+#slide-nav {
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	text-align: center;
+	z-index:5;
+}
+#slide-nav a{
+	border:none;
+}
+#h_slider .pages {
+	display: inline-block;
+	bottom: -20px;
+	vertical-align: middle;
+}
+
+#h_slider .bullet {
+	background-image: url(i/btn-sprite.png);
+	background-repeat: no-repeat;
+	background-position: -52px 0;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin: 0 6px;
+	vertical-align: middle;
+	z-index: 100;
+}
+
+#h_slider .bullet.on {
+	background-position: -82px 0;
+}
+
+#h_slider .bullet:active {
+	background-position: -67px 0;
+}
+
+#h_slider .bullet:hover,.bullet:focus {
+	border: none;
+	opacity: .7;
+}
+
+/* второй слайдер */
+#carousel {
+	margin-bottom: 58px;
+	width: 1060px;
+	position: relative;
+	margin: 0 -60px 48px -60px;
+}
+
+#carousel-wrapp {
+	width: 850px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#carousel ul {
+	display: block;
+	width: 940px;
+	margin: 0;
+	padding: 0px;
+	list-style: none;
+	overflow: hidden;
+	*zoom: 1;
+}
+
+#carousel li {
+	display: block;
+	float: left;
+	padding: 10px 11px;
+}
+
+#carousel-wrapp a {
+	display: block;
+	width: 152px;
+	color: #c74e6a;
+	text-align: center;
+	font: 18px/18px "PT Serif",serif;
+	color: #c74e6a;
+	border:none;
+}
+
+#carousel-wrapp a:hover,#carousel-wrapp a:focus {
+	border-bottom: none;
+}
+
+#carousel-wrapp a span {
+	border-bottom: 1px solid;
+	display: inline-block;
+}
+
+#carousel img {
+	display: block;
+	height: 152px;
+	width: 152px;
+	margin: 0 0 21px 0;
+}
+
+#carousel .next,#carousel .prev {
+	position: absolute;
+	background: #999;
+	border-radius: 50px;
+	width: 46px;
+	height: 46px;
+	cursor: pointer;
+	top: 63px;
+	background-image: url(i/btn-sprite.png);
+}
+
+#carousel .next {
+	background-position: 0 -157px;
+	right: 39px;
+}
+
+#carousel .prev {
+	background-position: 0 -111px;
+	left: 39px;
+}
+
+#carousel .next:hover,#carousel .next:focus {
+	background-position: -46px -157px;
+}
+
+#carousel .prev:hover,#carousel .prev:focus {
+	background-position: -46px -111px;
+}
+
+#carousel .next:active {
+	background-position: -92px -157px;
+}
+
+#carousel .prev:active {
+	background-position: -92px -111px;
+}
